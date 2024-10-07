@@ -1,0 +1,37 @@
+.navbar{
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+      .nav-link.active:hover {
+        font-weight: 700;
+        transition: 0.5s;
+      }
+      .nav-link{
+        color: white;
+      }
+      .nav-link:hover {
+        font-weight: 700;
+        transition: 0.3s;
+      }
+}
+.btn-appo:hover{
+    background-color: $primary;
+    width: auto;
+}
+.navbar .navbar-brand,
+.navbar a.btn {
+    height: 75px;
+}
+
+@media (max-width: 991.98px) {
+  .navbar .navbar-nav .nav-link  {
+      margin-right: 0;
+      padding: 10px 0;
+  }
+
+  .navbar .navbar-nav {
+      border-top: 1px solid #fff;
+      width: 100%;
+  }
+}

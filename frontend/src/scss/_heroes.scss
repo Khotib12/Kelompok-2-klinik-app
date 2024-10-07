@@ -1,0 +1,75 @@
+#hero-carousel{
+    min-height: 600px;
+    .carousel-inner::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0,0,0,0.3);
+        z-index: 1;
+    }
+    
+    .carousel-inner{
+        height: 600px;
+        .carousel-item{
+            height: 600px;
+            img{
+                height: 600px;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+    }
+    .carousel-indicator{
+        z-index: 999;
+    }
+    .carousel-caption{
+        bottom: 0 !important;
+        top: 0 !important;
+        left: 10% !important;
+        right: 10% !important;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .carousel-caption h1{
+       font-weight: 700;
+       text-transform: uppercase;
+       letter-spacing: 2px;
+       text-align: center;
+    }
+    .carousel-caption p{
+       width: 100%;
+       font-size: 18px;
+       text-align: center;
+    }
+}
+
+.appo-hero{
+    margin-top: 20px;
+    font-size: 18px;
+    border: 1px solid #ffc107;
+    border-radius: 10px;
+    background: transparent;
+    color: #ffc107;
+    padding: 10px 10px;
+    transition: all .3s ease;
+}
+.appo-hero:hover{
+    background: #ffc107;
+    color: black;
+}
+
+@media (min-width: 768px){
+    #hero-carousel .carousel-caption{
+        bottom: 170px;
+    }
+    #hero-carousel .carousel-caption p{
+        width: 50%;
+        line-height: 1.9;
+    }
+}
